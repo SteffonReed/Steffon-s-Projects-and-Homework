@@ -1,0 +1,136 @@
+Networking Fundamentals: Rocking your Network
+
+
+Phase 1: “I’d like to Teach the World to ping”
+
+Command(s) used to run fping against the IP ranges:
+
+fping -g 15.199.95.91/28
+fping -g 15.199.94.91/28
+fping -g 11.199.158.91/28
+fping -g 161.35.96.20/32
+fping -g 11.199.141.91/28
+
+
+Summarize the results of the fping command(s):
+
+Only IP 161.35.96.20/32 is alive and able to accept connections.  The rest of the IP’s (15.199.95.91/28, 15.199.94.91/28, 11.199.158.91/28, and 11.199.141.91/28) were unreachable for the Hollywood location.  
+
+
+List of IPs responding to echo requests:
+
+Only IP 161.35.96.20/32
+
+
+Explain which OSI layer(s) your findings involve:
+
+I used layer 3 within the OSI model to find this information regarding the Hollywood location IP’s.  This is where the IP and ICMP operate in the OSI module.
+
+
+Mitigation recommendations (if needed):
+
+A mitigation is needed for the IP 161.35.96.20/32 since it responds to ping requests and accepts connections.  I’d recommend limiting the ICMP traffic for this IP so it doesn’t respond to pings which is what Rockstar wants.
+
+
+
+Phase 2: “Some SYN for Nothin`”
+
+Which ports are open on the RockStar Corp server?
+
+Port 22 is open.  Port 21 and port 1723 are both closed.
+
+
+Which OSI layer do SYN scans run on?
+
+OSI Layer:
+
+Layer 4
+
+
+Explain how you determined which layer:
+
+Layer 4 is the transport layer and it’s used for things like the SYN scan and to detect which ports are open.
+
+
+Mitigation suggestions (if needed):
+
+Since port 22 is open (161.35.96.20:22), and 161.35.96.20 is accepting SSH connections there is a vulnerability here.  A hacker could SSH access to the server.  I would recommend restricting access to the port by using a VPN, multi factor authentication, and scanning the network ports on a regular basis to ensure ports are either closed or at the very least identified and secured immediately.
+
+
+
+Phase 3: “I Feel a DNS Change Comin’ On”
+
+Summarize your findings about why access to rollingstone.com is not working as expected from the RockStar Corp Hollywood office:
+
+The SSH connection for port 22 at the Hollywood office location is incorrect and will not direct to the correct IP address for rollingstone.com.
+
+
+Command used to query Domain Name System records:
+
+nslookup 98.137.246.8 or nslookup rollingstone.com…both will work
+
+
+Domain name findings:
+
+Running nslookup 98.137.246.8 output the following: 8.246.137.98.in-addr.arpa	name = unknown.yahoo.com. 
+
+Running nslookup rollingstone.com output the following:
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+Name:	rollingstone.com
+Address: 192.0.66.114
+
+
+
+
+Explain what OSI layer DNS runs on:
+
+DNS runs on layer 7 of the OSI layer.  This is because layer 7 deals with application layer protocol. 
+
+
+Mitigation suggestions (if needed):
+
+A mitigation is needed.  There needs to be a person with the right access or permission to change the access so that rollingstone.com can be redirected to the correct IP address.
+
+
+Phase 4: “ShARP Dressed Man”
+
+Name of file containing packets:
+
+You need to first go to /etc/packetcaptureinfo.txt.  Then the link with the packets is found here at this link…https://drive.google.com/file/d/1ic-CFFGrbruloYrWaw3PvT71elTkh3eF/view?usp=sharing
+
+
+
+
+
+ARP findings identifying the hacker’s MAC address:
+There are 2.
+00:0c:29:0f:71:a3 and 00:0c:29:1d:b3:b1
+
+
+HTTP findings, including the message from the hacker:
+
+Looks like the hacker visited the website www.gottheblues.yolasite.com.  The hacker sent an email from Hacker@rockstarcorp.com.  The message from the hacker is below:
+
+“Hi Got The Blues Corp!  This a a hacker that works at Rock Star Corp.  Rock Star has left port 22, SSH open if you want to hack in.  For 1 Milliion Dollars I will provide you the user and password!”
+
+
+Explain the OSI layers for HTTP and ARP.
+
+Layer used for HTTP:
+
+Layer 7 which is the application layer.
+
+
+Layer used for ARP:
+
+Layer 2 which is the data link layer. 
+
+
+Mitigation suggestions (if needed):
+
+This confirms a hacker works at Rockstar.  The security team needs to find this person and alert the authorities before the hacker reveals any other sensitive company information or allow other hackers to infiltrate RockStar.  They will have the hacker’s email address Hacker@rockstarcorp.com to help point them to who the hacker is.
+
+
