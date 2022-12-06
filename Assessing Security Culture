@@ -1,0 +1,82 @@
+
+Module 2 Challenge Submission File
+
+
+
+Assessing Security Culture
+
+Make a copy of this document to work in, and then answer each question below the prompt. Save and submit this completed file as your Challenge deliverable.
+
+
+Step 1: Measure and Set Goals
+
+Using outside research, indicate the potential security risks of allowing employees to access work information on their personal devices. Identify at least three potential attacks that can be carried out.
+
+3 Potential cybersecurity attacks that can be carried out are 1.Phishing attacks 2. A DOS from an agent looking to simply cause trouble 3. Brute force attack on employee passwords
+
+
+Based on the previous scenario, what is the preferred employee behavior? (For example, if employees were downloading suspicious email attachments, the preferred behavior would be that employees only download attachments from trusted sources.)
+
+Preferred behavior would be to have all employees not use their personal devices to access work related matters and communications unless their role requires it.  Preferred behavior could also include to have employees only access work related matters and communications on work devices only.
+
+
+What methods would you use to measure how often employees are currently not behaving according to the preferred behavior? (For example, conduct a survey to see how often people download email attachments from unknown senders.)
+I would first determine the number of employees whose job roles required access to work related matters and communications on personal devices with a survey  2.  I’d issue a company laptop to every employee 3. Then I’d have the IT department keep track and keep a log of all employees who try to access work related information and communications from personal devices.
+
+
+What is the goal that you would like the organization to reach regarding this behavior? (For example, to have less than 5% of employees downloading suspicious email attachments.)
+
+I’d like for the organization to be at less than 3% of accessing work related usage/communications on personal devices for all employees whose job roles don’t require that access.
+
+
+
+Step 2: Involve the Right People
+ 
+List at least five employees or departments that should be involved. For each person or department, describe in 2–3 sentences what their role and responsibilities will be.
+
+CEO - The CEO drives and executes the overall vision for the company.  They need to know what the security goals are for the company as well as which individuals will be leading the charge in their respective areas.
+
+CFO - They will be involved in reviewing and approving budgets related to creating the security culture.  Budgets related to training, devices, personnel, etc will need to come from the CFO.
+
+COO - They will be involved to ensure that business productivity stays at the optimum level.  There will be a lot of moving parts in creating a great security culture but the business cannot be neglected and the COO will oversee this.  They will also report back to the CEO with progress reports and other communications.
+
+Security Operations Team- They will communicate and interact with all of the non security teams within the organization.  All of the other departments will use IT and IT related security, networks, systems, etc so they will need to be informed about the security culture as well.
+CIO - Their role is to develop the IT systems that supports the organization.  Since every department will use IT in some shape, the CIO will need to be involved so they can develop and change the IT systems for the organization as needed.  This is vital to creating the security culture of an organization from a technical aspect.
+
+Managers of every other non IT team would also need to be involved as well.  They are vital to the security culture because they will need to be informed on the security culture so they can filter the info down to their respective teams and let them know about any coming changes and expectations regarding the security culture of the company.
+
+
+
+Step 3: Training Plan
+
+How frequently will you run training? What format will it take (e.g., in-person, online, a combination of both)?
+
+I would have training at least once a quarter.  It would be a combination of both.  For employees that don’t need personal access, their training would be online.  For employees whose role requires the personal access to work matters, their training would be in person and online so work production won’t take a hit.
+
+
+
+What topics will you cover in your training, and why? (This should be the bulk of the deliverable.)
+
+For employees whose role doesn’t require access to work related matters on personal devices, training will cover the dangers of accessing work related matters on personal devices.  Most of their training will focus on the dangers.  Dangers such as the different kinds of threats that are out there, the different threat actors who can carry out those threats, and how to protect and secure the information, materials, and communication that is accessed from personal devices.  For the employees whose role requires access from personal devices, I would cover the same training material with an emphasis on securing the personal devices used for accessing the work material and communications.  I would cover these topics for training so I could instill a cybersecurity culture and mindset within the company for everyone.
+
+
+After you’ve run your training, how will you measure its effectiveness? 
+
+I could have IT run logs and reports to see how many employees are still accessing the work related materials and communications from their personal devices and compare it to the employees whose role requires this access vs those whose role doesn’t require that personal access.
+
+
+
+Bonus: Other Solutions
+
+List at least two other potential solutions. For each one, indicate the following:
+What type of control is it? Administrative, technical, or physical? 
+What goal does this control have? Is it preventive, deterrent, detective, corrective, or compensating?
+What is one advantage of each solution? 
+What is one disadvantage of each solution?
+
+I could have IT deny access to all work related materials and communications from all outside personal devices for employees whose role doesn’t require it.  A. this is a technical control B. It would be preventative control C. Advantage is that it would ensure that employees would not be able to access the information on personal devices thereby eliminating all potential outside attacks  D. Disadvantage is that depending on the number of employees and how many personal devices they access company information on, blocking the access could take a while.  Not to mention at any time employees can buy and switch out their personal devices so this solution would be a constant ongoing solution. 
+
+
+I could also have IT create a secure VPN as well as require multi-factor authentication to anyone who will be accessing company materials and communications on personal devices.  A.  This is a technical control.  B.  This would be a preventative control.  C. An advantage is that this would create several layers of added security to sensitive company information and help prevent the theft of the information from outside threat actors.  D.  A disadvantage is that the MFA can fail or malfunction in the event of power outages or network issues.
+
+
